@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../config/app_template.dart';
-import '../screens/task_form.dart';
+import 'form_tugas.dart';
 import '../screens/edit_tugas.dart';
 
 class TaskScreen extends StatefulWidget {
@@ -394,7 +394,7 @@ class _TaskScreenState extends State<TaskScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(
-                'Membuka form tambah tugas baru',
+                '',
                 style: TextStyle(fontSize: 14),
               ),
               duration: Duration(seconds: 2),

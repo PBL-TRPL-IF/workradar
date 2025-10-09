@@ -23,22 +23,13 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
   void _cancelTask() {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('Membatalkan tugas...'),
+        content: Text('Membatalkan tugas'),
         duration: Duration(seconds: 1),
       ),
     );
     Future.delayed(Duration(milliseconds: 800), () {
       Navigator.pushNamed(context, AppScreens.task);
     });
-  }
-
-  void _addSubtask() {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('Fitur tambah subtugas diklik!'),
-        duration: Duration(seconds: 1),
-      ),
-    );
   }
 
   @override
@@ -368,7 +359,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
         
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Membuka form tambah subtugas...'),
+            content: Text(''),
             duration: Duration(seconds: 1),
           ),
         );

@@ -26,7 +26,7 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
   void _cancelEdit() {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('Membatalkan perubahan...'),
+        content: Text('Hapus tugas berhasil!'),
         duration: Duration(seconds: 1),
       ),
     );
@@ -218,14 +218,15 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
           child: OutlinedButton(
             onPressed: _cancelEdit,
             child: Text(
-              'Batal',
+              'Hapus',
               style: TextStyle(
                 fontSize: 16,
-                color: Colors.grey.shade700,
+                color: const Color.fromARGB(255, 253, 253, 253),
               ),
             ),
             style: OutlinedButton.styleFrom(
               padding: EdgeInsets.symmetric(vertical: 14),
+              backgroundColor: const Color.fromARGB(255, 254, 50, 50),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
               ),
