@@ -2,6 +2,7 @@
 export '../screens/main_screen.dart';
 export '../screens/task_screen.dart';
 export '../screens/settings_screen.dart';
+export '../screens/login.dart';
 
 class AppScreens {
   static const String home = '/beranda';
@@ -10,4 +11,5 @@ class AppScreens {
   static const String addSubtask = '';
   static const String editTask = '';
   static const String settings = '/pengaturan';
+  static const String login = '/login';
 }
