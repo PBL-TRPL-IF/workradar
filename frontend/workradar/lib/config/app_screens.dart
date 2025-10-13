@@ -11,10 +11,5 @@ class AppScreens {
   static const String addSubtask = '';
   static const String editTask = '';
   static const String settings = '/pengaturan';
-<<<<<<< HEAD
   static const String login = '/login';
 }
-=======
-  
-}
->>>>>>> origin/fitur-beranda
