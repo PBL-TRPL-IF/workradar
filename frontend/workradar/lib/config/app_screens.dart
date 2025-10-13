@@ -10,6 +10,6 @@ class AppScreens {
   static const String addTask = '';
   static const String addSubtask = '';
   static const String editTask = '';
-  static const String settings = '/pengaturan';
+  static const String settings = '';
   static const String login = '/login';
 }
