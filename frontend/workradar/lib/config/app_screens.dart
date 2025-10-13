@@ -10,4 +10,5 @@ class AppScreens {
   static const String addSubtask = '';
   static const String editTask = '';
   static const String settings = '/pengaturan';
+  
 }
