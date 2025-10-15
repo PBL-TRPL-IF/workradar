@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
-import 'config/app_screens.dart'; // Import template
-import 'config/app_routes.dart';  // Import routes
+import 'package:intl/date_symbol_data_local.dart'; // ✅ Tambahkan ini
+import 'config/app_screens.dart'; 
+import 'config/app_routes.dart';  
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized(); // ✅ Wajib kalau pakai async di main
+  await initializeDateFormatting('id_ID', null); // ✅ Inisialisasi locale Indonesia
+
   runApp(MyApp());
 }
 
@@ -15,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       initialRoute: AppScreens.home,
-      onGenerateRoute: AppRoutes.generateRoute, // Pakai route template
+      onGenerateRoute: AppRoutes.generateRoute,
     );
   }
 }
